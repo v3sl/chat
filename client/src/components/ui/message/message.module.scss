@@ -1,0 +1,52 @@
+.container {
+  margin: 10px 5px;
+  background-color: rgb(44, 44, 44);
+  width: fit-content;
+  max-width: 55%;
+  padding: 5px 15px 5px 5px;
+  border-radius: 5px;
+  color: rgb(170, 170, 170);
+  display: flex;
+  flex-direction: column;
+  * {
+    word-wrap: break-word;
+    white-space: pre-line;
+  }
+}
+
+.username {
+  font-size: 16px;
+}
+
+.text {
+  white-space: pre-line;
+  color: rgb(188, 188, 188);
+  margin: 5px 0px;
+  font-size: 22px;
+}
+
+.datetime {
+  font-size: 13px;
+}
+
+.left {
+  margin-right: auto;
+  margin-left: 10px;
+  .username {
+    align-self: flex-start;
+  }
+  .datetime {
+    align-self: flex-end;
+  }
+}
+
+.right {
+  margin-left: auto;
+  margin-right: 10px;
+  .username {
+    align-self: flex-end;
+  }
+  .datetime {
+    align-self: flex-start;
+  }
+}

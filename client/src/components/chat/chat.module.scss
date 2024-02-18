@@ -1,0 +1,76 @@
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(18, 18, 18);
+  display: flex;
+}
+
+.sideContainer {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(200, 200, 200);
+  border: 1px solid rgb(66, 66, 66);
+}
+
+.chatContainer {
+  width: 85%;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+.messagesContainer {
+  height: 91%;
+  background-color: rgb(18, 18, 18);
+  flex-direction: column;
+  padding-bottom: 10px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.inputContainer {
+  height: 9%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+  border: 1px solid rgb(66, 66, 66);
+}
+
+.inputArea {
+  border: 1px solid rgb(66, 66, 66);
+  white-space: pre-line;
+  width: 90%;
+  padding: 10px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  word-wrap: break-word;
+  &:focus {
+    outline: none;
+    border-color: rgb(249, 255, 255);
+  }
+  color: whitesmoke;
+  font-size: 18px;
+}
+.sendButton {
+  margin: 0 auto;
+  width: 10%;
+  background-color: rgb(36, 36, 36);
+  border: none;
+  &:hover {
+    background-color: rgb(40, 40, 40);
+  }
+}
+
+@media (max-width: 999px) {
+  .sideContainer,
+  .userContainer {
+    display: none;
+  }
+  .chatContainer {
+    width: 100%;
+  }
+  .sendButtonText {
+    display: none;
+  }
+}

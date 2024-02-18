@@ -1,0 +1,20 @@
+.title {
+  padding: 5px;
+  font-size: 20px;
+  align-self: center;
+  height: 4vh;
+}
+
+.usersContainer {
+  height: 90vh;
+  font-size: 17px;
+  padding: 10px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.userContainer {
+  overflow-x: auto;
+  width: 100%;
+  scrollbar-width: none;
+}
